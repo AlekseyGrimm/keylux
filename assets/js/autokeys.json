@@ -1,0 +1,68 @@
+[
+    {
+      "title": "Автомобильный вертикальный",
+      "src": "assets/img/keysimg/autokey/авто вертикальный без места.jfif",
+      "price": "25-30 BYN"
+    },
+    {
+      "title": "Автомобильный вертикальный с местом под чип",
+      "src": "assets/img/keysimg/autokey/авто вертикальный с местом.jfif",
+      "price": "45-55 BYN"
+    },
+    {
+        "title": "Автомобильный плоский",
+        "src": "assets/img/keysimg/autokey/автопластик плоский без места.jfif",
+        "price": "20 BYN"
+      },
+      {
+        "title": "Автомобильный плоский с местом под чип",
+        "src": "assets/img/keysimg/autokey/автопластик плоский с местом.jfif",
+        "price": "40-50 BYN"
+      },
+      {
+        "title": "Автопластик отечественный",
+        "src": "assets/img/keysimg/autokey/Автопластик отечественный.jfif",
+        "price": "20 BYN"
+      },
+      {
+        "title": "Автосталь",
+        "src": "assets/img/keysimg/autokey/Автосталь.jfif",
+        "price": "15-20 BYN"
+      },
+      {
+        "title": "Нарезка вертикального автоключа",
+        "src": "assets/img/keysimg/autokey/Нарезка вертикального автоключа.jfif",
+        "price": "от 20 BYN"
+      },
+      {
+        "title": "Нарезка плоского автоключа",
+        "src": "assets/img/keysimg/autokey/Нарезка плоского автоключа.jfif",
+        "price": "от 20 BYN"
+      },
+      {
+        "title": "Авто ключ с чипом (id: 31-33, 46, 48)",
+        "src": "assets/img/keysimg/autokey/Авто ключ с чипом (id 31-33, 46, 48).jfif",
+        "price": "100-120 BYN"
+      },
+      {
+        "title": "Авто ключ с чипом с постоянным кодом (Т5)",
+        "src": "assets/img/keysimg/autokey/Авто ключ с чипом с постоянным кодом (Т5).jfif",
+        "price": "90 BYN"
+      },
+      {
+        "title": "Авто ключ с оригинальным чипом (7935)",
+        "src": "assets/img/keysimg/autokey/Авто ключ с чипом (7935).jfif",
+        "price": "150 BYN"
+      },
+      {
+        "title": "Замена (пайка) кнопок 2-х контактных",
+        "src": "assets/img/keysimg/autokey/Замена (пайка) кнопок 2-х контактных.jfif",
+        "price": "10 BYN"
+      },
+      {
+        "title": "Замена (пайка) кнопок 4-х контактных",
+        "src": "assets/img/keysimg/autokey/Замена (пайка) кнопок 4-х контактных.jfif",
+        "price": "15 BYN"
+      }
+  ]
+  

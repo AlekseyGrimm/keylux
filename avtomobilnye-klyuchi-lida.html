@@ -99,7 +99,7 @@
     <section id="price-list" class="section light-background">
       <div class="container">
         <div class="section-title" style="padding: 5em 0;">
-          <h2>Прайс-лист</h2>
+          <h2>Автомобильные ключи прайс-лист</h2>
           <p>Выберите подходящий тип ключа:</p>
         </div>
         <div id="keys-container">
@@ -119,7 +119,7 @@
   <script>
     async function loadKeys() {
       try {
-        const response = await fetch('keys.json'); // Загрузка JSON
+        const response = await fetch('assets/js/autokeys.json'); // Загрузка JSON
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
