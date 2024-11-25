@@ -30,3 +30,68 @@
     background-color: #f0f0f0;
     color: #000;
   }
+
+  /* НАши Преимущества блок */
+  .advantage-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .advantage-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .advantage-item i {
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  .advantage-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .advantage-item p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  /* ВИДЕО */
+
+  .hero {
+    position: relative;
+    background-color: #37517ede;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover; /* Обрезка видео для заполнения контейнера */
+    z-index: -1; /* Видео на заднем фоне */
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+  }
