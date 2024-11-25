@@ -1,0 +1,63 @@
+[
+    {
+      "title": "Плоский обычный ключ",
+      "src": "assets/img/keysimg/angli.jfif",
+      "price": "8-10 BYN"
+    },
+    {
+      "title": "Вертикальный ключ (APECS,AVERS,BAODEN)",
+      "src": "assets/img/keysimg/APECS,AVERS,BAODEN.jfif",
+      "price": "12 BYN"
+    },
+    {
+      "title": "Вертикальный ключ сложный (CISA,ABUS,KALE)",
+      "src": "assets/img/keysimg/CISA,ABUS,KALE.jfif",
+      "price": "15-20 BYN"
+    },
+    {
+      "title": "Полукруглый (финский)",
+      "src": "assets/img/keysimg/fin.jfif",
+      "price": "8-10 BYN"
+    },
+    {
+      "title": "Крестообразный",
+      "src": "assets/img/keysimg/Крестообразный.jfif",
+      "price": "10 BYN"
+    },
+    {
+      "title": "Плаский иностранный (FAB, ASSA)",
+      "src": "assets/img/keysimg/fabASSA.jfif",
+      "price": "10-15 BYN"
+    },
+    {
+      "title": "Эльбор, Гродно, SAM, PAL",
+      "src": "assets/img/keysimg/Эльбор, Гродно, SAM3,PAL-1.jfif",
+      "price": "12-15 BYN"
+    },
+    {
+      "title": "Ростов",
+      "src": "assets/img/keysimg/РОСТОВ.jfif",
+      "price": "12 BYN"
+    },
+    {
+      "title": "Двухсторонний плоский (мебельный)",
+      "src": "assets/img/keysimg/Двухсторонний плоский (мебельный).jfif",
+      "price": "8-12 BYN"
+    },
+    {
+      "title": "Вертикальный Master Lock",
+      "src": "assets/img/keysimg/Master Lock.jfif",
+      "price": "25 BYN"
+    },
+    {
+      "title": "Вертикальный Mul-t-lock с магнитом",
+      "src": "assets/img/keysimg/Mul-t-lock.jfif",
+      "price": "45 BYN"
+    },
+    {
+      "title": "Домофонный ключ (DALLAS, CYFRAL, ТМ, КТ01)",
+      "src": "assets/img/keysimg/homeChips/Простой домофонный ключ DALLAS.jfif",
+      "price": "10-15 BYN"
+    }
+  ]
+  

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Прайс-лист | AutoKeyPlus</title>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    /* Грид для карточек */
+    #keys-container {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    /* Карточка */
+    .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: center;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        align-items: center;
+    }
+
+    /* Изображение */
+    .card img {
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    /* Текст в карточке */
+    .card-title {
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 10px 0;
+      text-align: left;
+    }
+
+    .price {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #6E508C;
+    }
+
+    .error-message {
+      text-align: center;
+      font-size: 1.2rem;
+      color: red;
+      margin-top: 20px;
+    }
+    .card-price{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10%;
+    }
+
+    @media (max-width: 767px) {
+    #keys-container {
+      grid-template-columns: 1fr; /* Один столбец на мобильных */
+    }
+  }
+  </style>
+</head>
+<body>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">AutoKeyPlus</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Главная</a></li>
+          <li><a href="#price-list">Прайс-лист</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="price-list" class="section light-background">
+      <div class="container">
+        <div class="section-title" style="padding: 5em 0;">
+          <h2>Прайс-лист</h2>
+          <p>Выберите подходящий тип ключа:</p>
+        </div>
+        <div id="keys-container">
+          <!-- Карточки будут загружены через JS -->
+        </div>
+        <div id="error-message" class="error-message"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer text-center" style="padding: 2em;">
+    <div class="container">
+      <p>©<strong class="px-1 sitename">AutoKeyPlus</strong> Все права защищены</p>
+    </div>
+  </footer>
+
+  <script>
+    async function loadKeys() {
+      try {
+        const response = await fetch('keys.json'); // Загрузка JSON
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const keys = await response.json();
+        const container = document.getElementById('keys-container');
+        container.innerHTML = ''; // Очистка контейнера
+
+        // Создание карточек
+        keys.forEach(key => {
+          const card = document.createElement('div');
+          card.className = 'card';
+
+          card.innerHTML = `
+            <img src="${key.src}" alt="${key.title}">
+            <div class="card-price">
+                <h4 class="card-title">${key.title}</h4>
+                <p class="price">${key.price}</p>
+            </div>
+          `;
+          container.appendChild(card);
+        });
+      } catch (error) {
+        document.getElementById('error-message').textContent = 'Ошибка загрузки прайс-листа. Пожалуйста, попробуйте позже.';
+        console.error('Ошибка загрузки:', error);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', loadKeys);
+  </script>
+</body>
+<script src="assets/js/main.js"></script>
+</html>
