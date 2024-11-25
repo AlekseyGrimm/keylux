@@ -41,9 +41,15 @@
    * Hide mobile nav on same-page/hash links
    */
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
-    navmenu.addEventListener('click', () => {
-      if (document.querySelector('.mobile-nav-active')) {
-        mobileNavToogle();
+    navmenu.addEventListener('click', (e) => {
+      // Если ссылка — Прайс-лист, не закрываем меню
+      if (e.target.classList.contains('dropdown-toggle')) {
+        e.preventDefault(); // Останавливаем стандартное поведение
+        e.stopPropagation(); // Останавливаем всплытие события
+        const parentDropdown = e.target.parentNode;
+        parentDropdown.classList.toggle('open'); // Открываем или закрываем подменю
+      } else if (document.querySelector('.mobile-nav-active')) {
+        mobileNavToogle(); // Закрываем меню для других ссылок
       }
     });
   });
