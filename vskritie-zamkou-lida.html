@@ -3,109 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Прайс-лист | AutoKeyPlus</title>
+  <title>Вскрытие замков | AutoKeyPlus</title>
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  
-    <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet">
-  <link href="assets/css/main.css" rel="stylesheet">
-  <style>
-    /* Грид для карточек */
-    #keys-container {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(300px, 1fr));
-      gap: 20px;
-    }
-
-    /* Карточка */
-    .card {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        text-align: center;
-        background-color: #f9f9f9;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 20px;
-        align-items: center;
-    }
-
-    /* Изображение */
-    .card img {
-      object-fit: cover;
-      border-radius: 5px;
-    }
-
-    /* Текст в карточке */
-    .card-title {
-      font-size: 1rem;
-      font-weight: bold;
-      margin: 10px 0;
-      text-align: left;
-    }
-
-    .price {
-      font-size: 1rem;
-      font-weight: bold;
-      color: #6E508C;
-    }
-
-    .error-message {
-      text-align: center;
-      font-size: 1.2rem;
-      color: red;
-      margin-top: 20px;
-    }
-    .card-price{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 10%;
-    }
-
-    @media (max-width: 767px) {
-    #keys-container {
-      grid-template-columns: 1fr; /* Один столбец на мобильных */
-    }
-  }
-  </style>
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">  
 </head>
-<body>
+<body class="index-page">
+  
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+
+      <a href="#" class="logo d-flex align-items-center me-auto">
         <h1 class="sitename">AutoKeyPlus</h1>
       </a>
+
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">На главную</a></li>
-        </ul>
+          <li><a href="index.html" class="active">На главную</a></li> 
+        </ul>         
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
     </div>
   </header>
 
-  <main class="main">
-    <section id="price-list" class="section light-background">
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div>
+        <h1 style="color: #f9f9f9;">Вскрытие замков в г.Лида</h1>
+        <br>
+        <p style="color: #f9f9f9;">Быстрое и безопасное вскрытие замков любых типов</p>
+      </div>
+    </section>
+
+    <!-- Price List Section -->
+    <section class="section price-list">
       <div class="container">
-        <div class="section-title" style="padding: 5em 0;">
-          <h2>Прайс-лист</h2>
-          <p>Выберите подходящий тип ключа:</p>
-        </div>
-        <div id="keys-container">
-          <!-- Карточки будут загружены через JS -->
-        </div>
-        <div id="error-message" class="error-message"></div>
+        <h3 style="color: red;">Прайс-лист на вскрытие авто</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Услуга</th>
+              <th>Стоимость</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Вскрытие салона отечественного авто</td><td>от 50 руб.</td></tr>
+            <tr><td>Вскрытие авто импортного производства</td><td>от 50 руб.</td></tr>
+            <tr><td>Вскрытие авто с двойной блокировкой</td><td>от 60 руб.</td></tr>
+            <tr><td>Авто с двойной блокировкой замка и защитой от свертыша</td><td>от 75 руб.</td></tr>
+            <tr><td>Вскрытие капота, багажника, бензобака</td><td>от 55 руб.</td></tr>
+            <tr><td>Вскрытие мототехники</td><td>от 65 руб.</td></tr>
+          </tbody>
+        </table>
+        <br><br>
+        <h3 style="color: red;">Цены на вскрытие противоугонных систем</h3>
+        <table>
+          <tbody>
+            <tr><td>Разблокировка механического блокиратора руля или КПП</td><td>от 60 руб.</td></tr>
+            <tr><td>Отключение сигнализации</td><td>договорная</td></tr>
+            <tr><td>Разблокировка иммобилайзера</td><td>договорная</td></tr>
+          </tbody>
+        </table>
+        <br><br>
+        <h3 style="color: red;">Другие работы</h3>
+        <table>
+          <tbody>
+            <tr><td>Работы, не указанные в прейскуранте</td><td>по запросу</td></tr>
+            <tr><td>Выезд мастера</td><td>30 руб.</td></tr>
+            <tr><td>Вызов в ночное время суток</td><td>50 руб.</td></tr>
+          </tbody>
+        </table>
+        <br>
+        <p class="price-note">
+          <strong style="color: red;">Обращаем ваше внимание:</strong> Окончательная цена услуги зависит 
+          от сложности требуемых работ и определяется мастером на месте. 
+          При безналичной оплате с расчетного счета организации +20 % к стоимости услуги. 
+          Ложный вызов мастера — 30 руб. Выезд мастера за пределы города оплачивается отдельно (от 10 руб.).
+        </p>
       </div>
     </section>
   </main>
@@ -115,41 +91,71 @@
       <p>©<strong class="px-1 sitename">AutoKeyPlus</strong> Все права защищены</p>
     </div>
   </footer>
-
-  <script>
-    async function loadKeys() {
-      try {
-        const response = await fetch('keys.json'); // Загрузка JSON
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-
-        const keys = await response.json();
-        const container = document.getElementById('keys-container');
-        container.innerHTML = ''; // Очистка контейнера
-
-        // Создание карточек
-        keys.forEach(key => {
-          const card = document.createElement('div');
-          card.className = 'card';
-
-          card.innerHTML = `
-            <img src="${key.src}" alt="${key.title}">
-            <div class="card-price">
-                <h4 class="card-title">${key.title}</h4>
-                <p class="price">${key.price}</p>
-            </div>
-          `;
-          container.appendChild(card);
-        });
-      } catch (error) {
-        document.getElementById('error-message').textContent = 'Ошибка загрузки прайс-листа. Пожалуйста, попробуйте позже.';
-        console.error('Ошибка загрузки:', error);
-      }
-    }
-
-    document.addEventListener('DOMContentLoaded', loadKeys);
-  </script>
 </body>
+<style>
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background: url('assets/img/car-locked-out-1.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+
+  .hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Черный цвет с прозрачностью 50% */
+  z-index: 1;
+}
+
+.hero h1, .hero p {
+  position: relative;
+  z-index: 2; /* Текст поверх затемнения */
+  color: #fff; /* Белый текст для контраста */
+}
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .section {
+    padding: 3em 0;
+  }
+
+  .price-list h3 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+
+  .price-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .price-list th, .price-list td {
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  .price-list th {
+    background-color: #f9f9f9;
+  }
+
+  .price-note {
+    margin-top: 1em;
+    font-size: 0.9rem;
+    color: #666;
+  }
+</style>
 <script src="assets/js/main.js"></script>
 </html>
