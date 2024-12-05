@@ -157,7 +157,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  position: absolute;
+  max-height: 130px;
   margin-right: 8px;
 }
 
