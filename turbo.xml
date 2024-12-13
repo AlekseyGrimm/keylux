@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:yandex="http://news.yandex.ru" xmlns:media="http://search.yahoo.com/mrss/" xmlns:turbo="http://turbo.yandex.ru" version="2.0">
+  <channel>
+    <title>AutokeyPlus</title>
+    <link>https://autokeyplus.by/</link>
+    <description>Ремонт и изготовление автомобильных ключей в Лиде</description>
+    <language>ru</language>
+
+    <!-- Турбостраница: Главная -->
+    <item turbo="true">
+      <link>https://autokeyplus.by/</link>
+      <turbo:content>
+        <![CDATA[
+        <header>
+          <h1>AutokeyPlus</h1>
+          <figure>
+            <img src="https://autokeyplus.by/assets/img/logoKey.png" alt="AutokeyPlus logo" />
+          </figure>
+          <p>Ремонт и изготовление автомобильных ключей в Лиде</p>
+        </header>
+        <h2>Наши услуги</h2>
+        <ul>
+          <li>Ремонт автомобильных ключей</li>
+          <li>Изготовление дубликатов до 5 минут</li>
+          <li>Программирование смарт ключей</li>
+        </ul>
+        <h2>Контакты</h2>
+        <p>Телефон: +375 (33) 91-777-47</p>
+        <p>Адрес: г. Лида, ул. Качана, д. 7</p>
+        ]]>
+      </turbo:content>
+    </item>
+
+    <!-- Турбостраница: Услуги -->
+    <item turbo="true">
+      <link>https://autokeyplus.by/vskritie-zamkou-lida.html</link>
+      <turbo:content>
+        <![CDATA[
+        <header>
+          <h1>Услуги AutokeyPlus</h1>
+        </header>
+        <p>Мы предлагаем:</p>
+        <ul>
+          <li>Восстановление утерянных авто ключей</li>
+          <li>Замена и ремонт чипов</li>
+          <li>Аварийное вскрытие замков в Лиде</li>
+        </ul>
+        <p><a href="https://autokeyplus.by/vskritie-zamkou-lida.html">Стоимость</a> услуг по аварийному вскрытию замков в Лиде.</p>
+        ]]>
+      </turbo:content>
+    </item>
+
+    <!-- Турбостраница: Контакты -->
+    <item turbo="true">
+      <link>https://autokeyplus.by</link>
+      <turbo:content>
+        <![CDATA[
+        <header>
+          <h1>Контакты AutokeyPlus</h1>
+        </header>
+        <p>Мы находимся по адресу:</p>
+        <p>г. Лида, ул. Качан, д. 7</p>
+        <p>Телефон: +375 (33) 91-777-47</p>
+        <p>Работаем по будням с 9:00 до 18:00.</p>
+        <p>По выходным выезжаем к клиентам по звонку</p>
+        <p><a href="https://autokeyplus.by/">Вернуться на главную</a></p>
+        ]]>
+      </turbo:content>
+    </item>
+
+  </channel>
+</rss>
