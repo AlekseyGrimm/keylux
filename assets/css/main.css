@@ -2065,3 +2065,690 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/*--------------------------------------------------------------
+# Lockout / Vskritie Zamkov Lida Page
+# Scoped styles for vskritie-zamkou-lida.html only
+--------------------------------------------------------------*/
+.lockout-page {
+  --lock-bg: #f5f7fb;
+  --lock-surface: #ffffff;
+  --lock-dark: #101828;
+  --lock-muted: #667085;
+  --lock-border: rgba(16, 24, 40, 0.1);
+  --lock-yellow: #ffdf4d;
+  --lock-yellow-dark: #e8bf15;
+  --lock-blue: #1d4ed8;
+  --lock-radius: 24px;
+  --lock-shadow: 0 24px 70px rgba(16, 24, 40, 0.12);
+}
+
+.lockout-page {
+  background: var(--lock-bg);
+  color: var(--lock-dark);
+}
+
+.lockout-page a {
+  transition: 0.25s ease;
+}
+
+.lock-hero {
+  position: relative;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  padding: 130px 0 90px;
+  background: url('../img/car-locked-out-1.jpg') center/cover no-repeat;
+  overflow: hidden;
+}
+
+.lock-hero::after {
+  content: '';
+  position: absolute;
+  inset: auto -12% -28% auto;
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, rgba(255, 223, 77, 0.28), transparent 65%);
+  pointer-events: none;
+}
+
+.lock-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(7, 12, 24, 0.9) 0%, rgba(7, 12, 24, 0.68) 48%, rgba(7, 12, 24, 0.38) 100%),
+    radial-gradient(circle at 24% 30%, rgba(255, 223, 77, 0.14), transparent 34%);
+}
+
+.lock-hero__container {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+  gap: 36px;
+  align-items: center;
+}
+
+.lock-hero__content {
+  max-width: 820px;
+  color: #fff;
+}
+
+.lock-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  border-radius: 999px;
+  background: rgba(255, 223, 77, 0.13);
+  border: 1px solid rgba(255, 223, 77, 0.35);
+  color: #ffe98a;
+  font-weight: 700;
+  font-size: 0.94rem;
+  margin-bottom: 22px;
+}
+
+.lock-badge--light {
+  background: rgba(16, 24, 40, 0.06);
+  border-color: rgba(16, 24, 40, 0.08);
+  color: var(--lock-dark);
+}
+
+.lock-hero h1 {
+  margin: 0;
+  max-width: 840px;
+  font-size: clamp(2.35rem, 5.5vw, 5.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  font-weight: 900;
+  color: #fff;
+}
+
+.lock-hero__lead {
+  max-width: 700px;
+  margin: 24px 0 0;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.lock-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.lock-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 54px;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-weight: 800;
+  text-decoration: none;
+  border: 1px solid transparent;
+  line-height: 1;
+}
+
+.lock-btn:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.lock-btn--primary {
+  color: #111827;
+  background: var(--lock-yellow);
+  box-shadow: 0 18px 42px rgba(255, 223, 77, 0.25);
+}
+
+.lock-btn--primary:hover {
+  color: #111827;
+  background: #ffe875;
+}
+
+.lock-btn--ghost {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(12px);
+}
+
+.lock-btn--ghost:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.lock-btn--dark {
+  color: #fff;
+  background: var(--lock-dark);
+}
+
+.lock-btn--dark:hover {
+  color: #fff;
+  background: #0b1220;
+}
+
+.lock-hero__phone {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 28px;
+}
+
+.lock-hero__phone span {
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.92rem;
+}
+
+.lock-hero__phone a {
+  color: var(--lock-yellow);
+  font-size: clamp(1.55rem, 3vw, 2.35rem);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.lock-hero__phone a:hover {
+  color: #fff0a6;
+}
+
+.lock-hero__card {
+  position: relative;
+  padding: 30px;
+  border-radius: var(--lock-radius);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow: var(--lock-shadow);
+  backdrop-filter: blur(16px);
+}
+
+.lock-hero__card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 18px;
+  border-radius: 18px;
+  background: #fff6c7;
+  color: var(--lock-yellow-dark);
+  font-size: 1.45rem;
+}
+
+.lock-hero__card h2 {
+  margin: 0 0 8px;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--lock-dark);
+}
+
+.lock-hero__card p {
+  margin: 0 0 22px;
+  color: var(--lock-muted);
+}
+
+.lock-hero__card ul,
+.lock-check-list {
+  display: grid;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.lock-hero__card li,
+.lock-check-list li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  color: var(--lock-dark);
+  line-height: 1.45;
+}
+
+.lock-hero__card li i,
+.lock-check-list li::before {
+  color: var(--lock-yellow-dark);
+  flex: 0 0 auto;
+}
+
+.lock-check-list li::before {
+  content: '✓';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(255, 223, 77, 0.18);
+  font-weight: 900;
+}
+
+.lock-section {
+  padding: 86px 0;
+}
+
+.lock-section--intro,
+.lock-section--prices,
+.lock-section--faq {
+  background: var(--lock-bg);
+}
+
+.lock-section--services,
+.lock-section--area {
+  background: #fff;
+}
+
+.lock-section-heading {
+  max-width: 780px;
+  margin-bottom: 34px;
+}
+
+.lock-section-heading--center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.lock-section-heading span,
+.lock-final-cta span {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--lock-yellow-dark);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+}
+
+.lock-section-heading h2,
+.lock-area-card h2,
+.lock-final-cta h2 {
+  margin: 0;
+  color: var(--lock-dark);
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  font-weight: 900;
+}
+
+.lock-section-heading p {
+  margin: 18px 0 0;
+  color: var(--lock-muted);
+  line-height: 1.7;
+}
+
+.lock-card {
+  height: 100%;
+  padding: 32px;
+  border-radius: var(--lock-radius);
+  box-shadow: 0 16px 42px rgba(16, 24, 40, 0.08);
+}
+
+.lock-card--text {
+  background: #fff;
+  border: 1px solid var(--lock-border);
+}
+
+.lock-card--text p {
+  color: #344054;
+  font-size: 1.03rem;
+  line-height: 1.78;
+}
+
+.lock-card--text p:last-child {
+  margin-bottom: 0;
+}
+
+.lock-card--dark {
+  background: linear-gradient(145deg, #111827, #1f2937);
+  color: #fff;
+}
+
+.lock-card--dark h3 {
+  margin: 0 0 20px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.45rem;
+}
+
+.lock-card--dark .lock-check-list li {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.lock-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.lock-service-card {
+  padding: 28px;
+  border-radius: var(--lock-radius);
+  background: var(--lock-bg);
+  border: 1px solid var(--lock-border);
+  transition: 0.25s ease;
+}
+
+.lock-service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 46px rgba(16, 24, 40, 0.1);
+  background: #fff;
+}
+
+.lock-service-card i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 18px;
+  border-radius: 18px;
+  background: #fff6c7;
+  color: var(--lock-yellow-dark);
+  font-size: 1.45rem;
+}
+
+.lock-service-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--lock-dark);
+}
+
+.lock-service-card p {
+  margin: 0;
+  color: var(--lock-muted);
+  line-height: 1.65;
+}
+
+.lock-price-group {
+  margin-top: 26px;
+}
+
+.lock-price-group h3 {
+  margin: 0 0 14px;
+  color: var(--lock-dark);
+  font-size: 1.35rem;
+  font-weight: 900;
+}
+
+.lock-table-wrap {
+  overflow: hidden;
+  border: 1px solid var(--lock-border);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 12px 34px rgba(16, 24, 40, 0.06);
+}
+
+.lock-price-table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+}
+
+.lock-price-table th,
+.lock-price-table td {
+  padding: 18px 20px;
+  border-bottom: 1px solid rgba(16, 24, 40, 0.08);
+  vertical-align: middle;
+}
+
+.lock-price-table th {
+  background: #111827;
+  color: #fff;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.lock-price-table td:first-child {
+  color: #344054;
+  font-weight: 650;
+}
+
+.lock-price-table td:last-child {
+  width: 220px;
+  color: var(--lock-dark);
+  font-weight: 900;
+  text-align: right;
+}
+
+.lock-price-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.lock-note {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-top: 26px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #fff9d9;
+  border: 1px solid rgba(232, 191, 21, 0.24);
+}
+
+.lock-note i {
+  color: var(--lock-yellow-dark);
+  font-size: 1.3rem;
+  margin-top: 2px;
+}
+
+.lock-note p {
+  margin: 0;
+  color: #51430a;
+  line-height: 1.65;
+}
+
+.lock-area-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 34px;
+  padding: 42px;
+  border-radius: 32px;
+  background: linear-gradient(135deg, #ffdf4d 0%, #fff1a8 100%);
+  box-shadow: var(--lock-shadow);
+}
+
+.lock-area-card p {
+  max-width: 820px;
+  margin: 18px 0 0;
+  color: rgba(16, 24, 40, 0.76);
+  line-height: 1.7;
+}
+
+.lock-faq-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.lock-faq-item {
+  padding: 26px;
+  border-radius: var(--lock-radius);
+  background: #fff;
+  border: 1px solid var(--lock-border);
+  box-shadow: 0 12px 32px rgba(16, 24, 40, 0.06);
+}
+
+.lock-faq-item h3 {
+  margin: 0 0 10px;
+  color: var(--lock-dark);
+  font-size: 1.15rem;
+  font-weight: 900;
+}
+
+.lock-faq-item p {
+  margin: 0;
+  color: var(--lock-muted);
+  line-height: 1.7;
+}
+
+.lock-final-cta {
+  padding: 88px 0;
+  background: #fff;
+}
+
+.lock-final-cta__box {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 54px 34px;
+  border-radius: 34px;
+  text-align: center;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 223, 77, 0.28), transparent 42%),
+    linear-gradient(145deg, #111827, #1f2937);
+  box-shadow: var(--lock-shadow);
+  color: #fff;
+}
+
+.lock-final-cta h2 {
+  color: #fff;
+}
+
+.lock-final-cta p {
+  max-width: 620px;
+  margin: 16px auto 26px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7;
+}
+
+.lock-final-cta address {
+  margin: 22px 0 0;
+  color: rgba(255, 255, 255, 0.66);
+  font-style: normal;
+}
+
+.lock-mobile-call {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 56px;
+  border-radius: 999px;
+  background: var(--lock-yellow);
+  color: #111827;
+  font-weight: 900;
+  text-decoration: none;
+  box-shadow: 0 16px 46px rgba(16, 24, 40, 0.28);
+}
+
+.lock-mobile-call:hover {
+  color: #111827;
+  text-decoration: none;
+}
+
+.footer {
+  padding: 2em;
+}
+
+@media (max-width: 1199px) {
+  .lock-hero__container {
+    grid-template-columns: 1fr;
+  }
+
+  .lock-hero__card {
+    max-width: 520px;
+  }
+
+  .lock-services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .lock-hero {
+    min-height: auto;
+    padding: 112px 0 68px;
+  }
+
+  .lock-hero h1 {
+    font-size: clamp(2.15rem, 12vw, 3.3rem);
+  }
+
+  .lock-hero__lead {
+    font-size: 1rem;
+  }
+
+  .lock-hero__actions,
+  .lock-btn {
+    width: 100%;
+  }
+
+  .lock-hero__phone a {
+    font-size: 1.55rem;
+  }
+
+  .lock-hero__card,
+  .lock-card,
+  .lock-service-card,
+  .lock-faq-item {
+    padding: 22px;
+    border-radius: 20px;
+  }
+
+  .lock-section {
+    padding: 58px 0;
+  }
+
+  .lock-services-grid,
+  .lock-faq-list {
+    grid-template-columns: 1fr;
+  }
+
+  .lock-area-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px;
+    border-radius: 24px;
+  }
+
+  .lock-area-card .lock-btn {
+    width: 100%;
+  }
+
+  .lock-price-table th,
+  .lock-price-table td {
+    padding: 14px 14px;
+  }
+
+  .lock-price-table td:last-child {
+    width: 120px;
+  }
+
+  .lock-note {
+    flex-direction: column;
+  }
+
+  .lock-final-cta__box {
+    padding: 38px 22px;
+    border-radius: 26px;
+  }
+
+  .lock-mobile-call {
+    display: flex;
+  }
+
+  .footer {
+    padding-bottom: 88px;
+  }
+}
+
+@media (max-width: 420px) {
+  .lock-price-table th,
+  .lock-price-table td {
+    font-size: 0.9rem;
+  }
+
+  .lock-price-table td:last-child {
+    width: 106px;
+  }
+}
