@@ -115,9 +115,11 @@
   /**
    * Initiate glightbox
    */
+  if (typeof GLightbox !== 'undefined') {
   const glightbox = GLightbox({
     selector: '.glightbox'
   });
+}
 
   /**
    * Init swiper sliders
